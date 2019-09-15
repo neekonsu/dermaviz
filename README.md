@@ -39,10 +39,10 @@ Once the form data and genomic data is available, the Dermaviz server generates 
 #### Patient Scanning
 After entering the invite code, patients are instructed to scan their face. After a successful scan, these scans are uploaded to our server. 
 
-**Demo 1:**
+##### Demo 1:
 <img src="https://github.com/SVAI/Dermaviz/raw/master/assets/demo-1.gif" height="512" />
 
-**Demo 2:**
+##### Demo 2:
 <img src="https://github.com/SVAI/Dermaviz/raw/master/assets/demo-2.gif" height="512" />
 
 ## Conclusion/Discussion:
