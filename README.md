@@ -20,13 +20,14 @@ Dermaviz is a full research suite designed to advance and integrate the collecti
 Neurofibromatosis (NF) type 1 is a highly heterogeneous disease. Currently, we do not have ways to predict which patients will develop certain characteristics or respond to therapies. In order to improve management of NF1, including both risk stratification and targeted therapeutics, a better understanding of disease heterogeneity is needed. A recent study by Tabata et. al. (under review) identified phenotypic subtypes. However, genotypic and phenotypic data is needed from a large sample size (>2000) in order to perform genome-wide association studies to identify novel modifiers of disease to further understand heterogeneity. Our work creates a novel method of data collection that will enable rapid data collection of phenotypic, genotypic, and 3D patient data in order to rapidly advance research for NF1. This solution will enable personalized risk stratification, development of therapeutics, and response to therapeutics. Integration of our solution with existing data will synergistically result in a powerful database for discovery. Furthermore, our solution is scalable, HIPPA compliant, and translatable to other rare diseases.
 
 ![Figure 4](https://raw.githubusercontent.com/SVAI/Dermaviz/master/assets/Figure4.jpg)
+![Current Data](https://raw.githubusercontent.com/SVAI/Dermaviz/master/assets/currentdata.jpg)
+![After Data](https://raw.githubusercontent.com/SVAI/Dermaviz/master/assets/afterdata.jpg)
+
+## Methods
+
   
 
-## Methods *: How did we go about solving it?*
-
-  
-
-## Results *: What did we observe? Figures are great!*
+## Results
 
 We created an iOS app that takes a high-resolution 3D scan of a patient’s face and exports it to a HIPAA-compliant Google Cloud server. We also developed a pipeline for connecting all collected 3D models to Google BigQuery as well to Machine-Learning ready stacks.
 
@@ -52,6 +53,7 @@ After entering the invite code, patients are instructed to scan their face. Afte
 
 A phone application that captures high-resolution 3D images of NF1 patient skin allows for rapid collection of phenotypic NF1 data. We created here an iOS app that takes a high resolution 3D scan of the patient’s face, links it to patient clinical, genomic, and survey data, and exports it to a HIPAA-compliant Google Cloud folder for visualization by dermatologists and NF1 researchers. Rapid collection of phenotypic data and linking with clinical, genomic, and survey data enables robust characterizations of disease heterogeneity and will dramatically accelerate research in NF1 in the following areas:
 
+-  Increase utility of currently available datasets
 -   Obtaining prognostic information on who might need treatment
     
 -   Capturing the natural history of NF1
