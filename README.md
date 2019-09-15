@@ -1,3 +1,4 @@
+
 # Dermaviz
 <p align="center">
   <img src="https://github.com/SVAI/Dermaviz/raw/master/assets/logo.png" width="256" title="Dermaviz Logo"/>
@@ -22,6 +23,16 @@ Neurofibromatosis (NF) type 1 is a highly heterogeneous disease. Currently, we d
 ![Figure 4](https://raw.githubusercontent.com/SVAI/Dermaviz/master/assets/Figure4.jpg)
 ![Current Data](https://raw.githubusercontent.com/SVAI/Dermaviz/master/assets/currentdata.jpg)
 ![After Data](https://raw.githubusercontent.com/SVAI/Dermaviz/master/assets/afterdata.jpg)
+
+## Solution
+
+-   Mobile application generates high resolution 3D model of NF1 patient’s body
+    
+-   Rapidly collect thousands of 3D images of NF1 patients’ skin
+    
+-   Store in HIPAA-compliant Google Cloud folder for phenotypic visualization and downstream ML
+    
+-   Genotype-phenotype research pipeline
 
 ## Methods
 
