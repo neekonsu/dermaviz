@@ -1,4 +1,3 @@
-
 # Dermaviz
 <p align="center">
   <img src="https://github.com/SVAI/Dermaviz/raw/master/assets/logo.png" width="256" title="Dermaviz Logo"/>
@@ -36,6 +35,26 @@ Neurofibromatosis (NF) type 1 is a highly heterogeneous disease. Currently, we d
 
 ## Methods
 
+#### Integrating patient data:
+
+A comprehensive patient survey has been adapted from the Children’s Tumor Foundation and formatted as a google forms survey. Patients will submit this form through the app, which will be linked to the patient’s unique cloud file. Genomic data is also on this cloud file.
+
+
+#### Patient 3D Data App:
+
+After completing the patient data survey, the patient is assigned a unique invite code. The patient provides this in our app to submit their 3D scan. The app guides the patient on scanning their face and assembles into a 3D model. This model is sent up to the HIPPA-compliant server securely using HTTPS and is available in multiple popular file formats. These scans are sorted by date.
+
+
+#### HIPPA compliant storage and Data Access:
+
+Google Cloud Servers are used for storage of patient phenotypic, genotypic, and 3D data. This can be accessed by dermatologists and researchers with access permissions and can be linked to patient electronic medical record data, such as MRI and lab results.
+
+All genomic data and 3D models are stored by date and are available in a single patient file. Files are accessible by authenticated clinicians.  
+  
+
+#### Pipeline:
+
+A pipeline is available for associating this data to Google BigQuery as well as assembling a dataset and sending over to any Machine Learning ready stack.
   
 
 ## Results
