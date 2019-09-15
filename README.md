@@ -1,4 +1,3 @@
-
 # Dermaviz
 <p align="center">
   <img src="https://github.com/SVAI/Dermaviz/raw/master/assets/logo.png" width="256" title="Dermaviz Logo"/>
@@ -26,15 +25,19 @@ Neurofibromatosis (NF) type 1 is a highly heterogeneous disease. Currently, we d
 
 ## Results *: What did we observe? Figures are great!*
 
-We created an iOS app that takes a high-resolution 3D scan of a patient’s face and exports it to a HIPAA-compliant Google Cloud server. We also developed a pipeline for… [insert].
+We created an iOS app that takes a high-resolution 3D scan of a patient’s face and exports it to a HIPAA-compliant Google Cloud server. We also developed a pipeline for connecting all collected 3D models to Google BigQuery as well to Machine-Learning ready stacks.
 
 3D scan of team members’ faces successfully captured the makeshift “neurofibromas” that were placed on the skin. Furthermore, the 3D face image was successfully exported to the Google Cloud server and linked to clinical, genomic, and survey data.
 
+Our suite integrates with a patient questionnaire and genomic data collection. Each patient is assigned a unique invite code that allows them to “log-in” to the app and take scans. All scans are securely uploaded to our HIPPA-compliant Google Cloud server over HTTPS. Each scan is sorted by date taken to provide clinicians with a comprehensive view on the development of NF over time. These scans are available in the standard `.obj` format. The dermatologist will also have access to patient data that includes submitted answers in the questionnaire as well the genomic data collected.
+
 #### Patient Invite Code:
+
 Once the form data and genomic data is available, the Dermaviz server generates an invite code and sends it to the patient. On the app, the patient enters the invite code. This code is cached client side and is used to send all data to the server.
 <img src="https://raw.githubusercontent.com/SVAI/Dermaviz/master/assets/invite-code.png" height="512" title="Dermaviz Invite Code"/>
 
 #### Patient Scanning
+After entering the invite code, patients are instructed to scan their face. After a successful scan, these scans are uploaded to our server. 
 
 **Demo 1:**
 <img src="https://github.com/SVAI/Dermaviz/raw/master/assets/demo-1.gif" height="512" />
@@ -82,22 +85,8 @@ A phone application that captures high-resolution 3D images of NF1 patient skin 
 
   
 
-### Docker
+## Acknowledgments
 
-  
+Special thanks to [Bellus3D](https://bellus3d.com/) for licensing their 3D technology for us to research and build upon.
 
-*The Docker image contains <R/jupyter> notebooks of all analyses and the dependencies to run them. *Be sure to note if you need any special credentials to access data for these analyses, **don't package restricted data** in your containers!*
-
-  
-
-Instructions for running the following notebooks: *be sure to adjust these instructions as necessary! check out https://github.com/Sage-Bionetworks/nf-hackathon-2019 for example containers and instructions*
-
-  
-
-1. `docker pull <your dockerhub repo>/<this container>` command to pull the image from the DockerHub
-
-2. `docker run <your dockerhub repo>/<this container>` Run the docker image from the master shell script
-
-  
-
-### Important Resources *: primary data, github repository, Synapse project, dockerfile link etc.*
+Logo credits to [RoundIcons](https://www.flaticon.com/authors/roundicons).
